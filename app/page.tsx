@@ -15,10 +15,9 @@ export default function Home() {
 
         <div className="flex flex-2 flex-col items-center px-24">
           <div className="avatar">
-            <div className="mask mask-squircle ">
+            <div className="mask mask-squircle w-72">
               <Image
                 src={ProfilePic}
-                width={250}
                 alt="personal portrait image"
               />
             </div>
