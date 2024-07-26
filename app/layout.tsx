@@ -13,6 +13,7 @@ import 'animate.css';
 export const metadata: Metadata = {
   title: "M. E. Abdelsalam - Protfolio Website",
   description: "This is my humble website where I share what I build and write with everyone on the web.",
+  metadataBase: new URL('https://moehab.surge.sh'),
 };
 
 export default function RootLayout({
