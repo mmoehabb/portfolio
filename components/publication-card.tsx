@@ -2,11 +2,15 @@
 
 import Image from "next/image"
 import { Publication } from "@/app/lib/data"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import clsx from "clsx"
 
 export default function PublicationCard({ publication }: { publication: Publication }) {
   const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setLoaded(false)
+  }, [publication.imgsrc])
 
   return (
     <div className="card bg-neutral h-[550px] w-96 m-8 md:m-12 shadow rounded-lg overflow-hidden transition lg:hover:scale-125 hover:shadow-xl">
