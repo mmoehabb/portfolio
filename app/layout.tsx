@@ -8,6 +8,8 @@ import {
   Abel_400, 
 } from "@/app/fonts"
 
+import 'animate.css';
+
 export const metadata: Metadata = {
   title: "M. E. Abdelsalam - Protfolio Website",
   description: "This is my humble website where I share what I build and write with everyone on the web.",
@@ -20,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="mytheme">
-      <body className={Abel_400.className}>
+      <body className={`${Abel_400.className} bg-primary`}>
         <Header />
         {children}
         <Footer />

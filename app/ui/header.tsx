@@ -12,7 +12,7 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="flex flex-row justify-between items-center h-32 px-24 bg-primary">
+    <header className="flex flex-row justify-between items-center h-32 px-24 bg-primary animate__animated animate__fadeInDown">
       <h1 className={`${Alex_Brush_400.className} text-5xl`}>
         M. E. Abdelsalam
       </h1>

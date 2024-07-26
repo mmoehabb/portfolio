@@ -1,19 +1,30 @@
+'use client'
+
 import Image from "next/image"
 import { Publication } from "@/app/lib/data"
-import { Suspense } from "react"
+import { useState } from "react"
+import clsx from "clsx"
 
 export default function PublicationCard({ publication }: { publication: Publication }) {
+  const [loaded, setLoaded] = useState(false)
+
   return (
     <div className="card bg-neutral min-h-[500px] w-96 m-12 shadow-xl rounded-lg overflow-hidden transition hover:scale-125 hover:shadow-2xl">
-      <a href={publication.link}>
-        <Suspense fallback={<div className="skeleton h-32 w-32"></div>}>
-          <Image 
-            src={publication.imgsrc}
-            width={500}
-            height={500}
-            alt={`${publication.title} image`}
-          />
-        </Suspense>
+      <a href={publication.link} className="relative">
+        <div className={clsx(
+          "absolute flex justify-center items-center h-full w-full bg-neutral transition", 
+          "animate__fadeOut animate__delay-1s",
+          {"animate__animated": loaded === true
+        })}>
+          <span className={clsx("loading loading-spinner loading-lg", {"hidden": loaded === true})}></span>
+        </div>
+        <Image 
+          src={publication.imgsrc}
+          width={500}
+          height={500}
+          alt={`${publication.title} image`}
+          onLoad={() => setLoaded(true)}
+        />
       </a>
       <div className="card-body">
         <h2 className="card-title">

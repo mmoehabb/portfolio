@@ -13,7 +13,7 @@ export default function Home() {
     <main className={'bg-secondary'}>
       <section className={"flex flex-row bg-primary text-neutral py-16"}>
 
-        <div className="flex flex-2 flex-col items-center px-24">
+        <div className="flex flex-2 flex-col items-center px-24 animate__animated animate__fadeIn animate__delay-1s">
           <div className="avatar">
             <div className="mask mask-squircle w-72">
               <Image
@@ -27,7 +27,7 @@ export default function Home() {
           </h1>
         </div>
         
-        <div className="flex-1">
+        <div className="flex-1 animate__animated animate__fadeIn animate__delay-2s">
           <div className="relative mb-4">
             <h1 className="text-4xl">
               WHO I AM
