@@ -9,7 +9,7 @@ export default function PublicationCard({ publication }: { publication: Publicat
   const [loaded, setLoaded] = useState(false)
 
   return (
-    <div className="card bg-neutral min-h-[500px] w-96 m-12 shadow-xl rounded-lg overflow-hidden transition hover:scale-125 hover:shadow-2xl">
+    <div className="card bg-neutral h-[550px] w-96 m-8 md:m-12 shadow rounded-lg overflow-hidden transition lg:hover:scale-125 hover:shadow-xl">
       <a href={publication.link} className="relative">
         <div className={clsx(
           "absolute flex justify-center items-center h-full w-full bg-neutral transition", 
