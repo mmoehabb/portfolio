@@ -43,7 +43,7 @@ export default function PublicationCard({ publication }: { publication: Publicat
             <div key={i} className="badge badge-outline">{tag}</div>
           ))}
         </div>
-        <a href={publication.link} class="card-button">More info</a>
+        <a href={publication.link} className="card-button">More info</a>
       </div>
     </div>
   )
