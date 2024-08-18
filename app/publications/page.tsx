@@ -27,7 +27,7 @@ export default function Publications() {
           </Link> 
         ))}
       </nav>
-      <section className="flex flex-wrap justify-center lg:justify-start py-12 md:p-24 text-primary">
+      <section className="flex flex-wrap justify-center py-12 md:p-24 text-primary">
         {Pubs.filter(pub => category ? pub.category[0] == category : true).map((pub, i) => (
           <PublicationCard key={i} publication={pub}/>
         ))}

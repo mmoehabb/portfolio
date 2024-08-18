@@ -26,6 +26,14 @@ export const Pubs: Array<Publication> = [
     tags: ["npm", "package", "typescript"]
   },
   {
+    title: "Definitions - Web Application",
+    desc: "A full-stack web application dictionary that's continuously getting written by end users; users can supply the application with words, definitions, and different references. Furthermore, words and definitions can be modified or reported/removed with a voting approuch.",
+    imgsrc: "/pubs/definitions.png",
+    link: "https://definitions.up.railway.app/",
+    category: ["Applications"],
+    tags: ["Full-stack Web Application", "Next.js", "TypeScript"]
+  },
+  {
     title: "Decentralized Chat Application",
     desc: "Yellow is an open-source, cross-platform, decentralized chat application. It can be used locally or globally; all that needed, to establish a connection between two users, is to share their ip addresses to on another.",
     imgsrc: "/pubs/yellow.png",
