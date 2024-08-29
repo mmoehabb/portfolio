@@ -18,12 +18,12 @@ export const CATEGORIES: Array<CATEGORY> = [
 
 export const Pubs: Array<Publication> = [
   {
-    title: "CracksDB: Minimalist Permanent State Manager",
-    desc: "A minimalist permanent state manager that you may use in applications where the complexity of common databases is deemed unnecessary and groundless. It essentially stands on StateFile architecture which I've recently published an article.",
-    imgsrc: "/pubs/cracksdb.png",
-    link: "https://github.com/Mahmoud-Ehab/cracksdb",
-    category: ["Packages"],
-    tags: ["npm", "package", "typescript"]
+    title: "xolua - Cross-Platform Game",
+    desc: "A general tic-tac-toe game with an AI agent developed in lua.",
+    imgsrc: "/pubs/xolua.gif",
+    link: "https://github.com/Mahmoud-Ehab/xo-lua",
+    category: ["Applications"],
+    tags: ["Lua", "Love2D", "AI"]
   },
   {
     title: "Definitions - Web Application",
@@ -32,6 +32,14 @@ export const Pubs: Array<Publication> = [
     link: "https://definitions.up.railway.app/",
     category: ["Applications"],
     tags: ["Full-stack Web Application", "Next.js", "TypeScript"]
+  },
+  {
+    title: "CracksDB: Minimalist Permanent State Manager",
+    desc: "A minimalist permanent state manager that you may use in applications where the complexity of common databases is deemed unnecessary and groundless. It essentially stands on StateFile architecture which I've recently published an article.",
+    imgsrc: "/pubs/cracksdb.png",
+    link: "https://github.com/Mahmoud-Ehab/cracksdb",
+    category: ["Packages"],
+    tags: ["npm", "package", "typescript"]
   },
   {
     title: "Decentralized Chat Application",

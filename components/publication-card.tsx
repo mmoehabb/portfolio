@@ -14,7 +14,7 @@ export default function PublicationCard({ publication }: { publication: Publicat
 
   return (
     <div className="card bg-neutral h-[550px] w-96 mx-4 my-8 md:my-12 shadow rounded-lg overflow-hidden transition lg:hover:scale-105 hover:shadow-xl">
-      <a href={publication.link} className="relative">
+      <a href={publication.link} className="relative max-h-52 overflow-hidden">
         <div className={clsx(
           "absolute flex justify-center items-center h-full w-full bg-neutral transition", 
           "animate__fadeOut animate__delay-1s",
