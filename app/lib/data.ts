@@ -18,10 +18,26 @@ export const CATEGORIES: Array<CATEGORY> = [
 
 export const Pubs: Array<Publication> = [
   {
+    title: "Play with Your Pal",
+    desc: "A full-stack web application that allows gamers to play local multiplayer games online together.",
+    imgsrc: "/pubs/pwyp.png",
+    link: "https://github.com/mmoehabb/play-with-your-pal",
+    category: ["Applications"],
+    tags: ["Golang", "Web Development", "WebSocket"]
+  },
+  {
+    title: "GoWeb - Project Template",
+    desc: "A template for developing full-stack web applications in Golang. Used tech: Fiber, Templ, Tailwind, HTMX, and Postgres.",
+    imgsrc: "/pubs/goweb.gif",
+    link: "https://github.com/mmoehabb/goweb-template",
+    category: ["Packages"],
+    tags: ["Golang", "Web Development", "Template"]
+  },
+  {
     title: "xolua - Cross-Platform Game",
     desc: "A general tic-tac-toe game with an AI agent developed in lua.",
     imgsrc: "/pubs/xolua.gif",
-    link: "https://github.com/Mahmoud-Ehab/xo-lua",
+    link: "https://github.com/mmoehabb/xo-lua",
     category: ["Applications"],
     tags: ["Lua", "Love2D", "AI"]
   },
@@ -37,7 +53,7 @@ export const Pubs: Array<Publication> = [
     title: "CracksDB: Minimalist Permanent State Manager",
     desc: "A minimalist permanent state manager that you may use in applications where the complexity of common databases is deemed unnecessary and groundless. It essentially stands on StateFile architecture which I've recently published an article.",
     imgsrc: "/pubs/cracksdb.png",
-    link: "https://github.com/Mahmoud-Ehab/cracksdb",
+    link: "https://github.com/mmoehabb/cracksdb",
     category: ["Packages"],
     tags: ["npm", "package", "typescript"]
   },
@@ -45,7 +61,7 @@ export const Pubs: Array<Publication> = [
     title: "Decentralized Chat Application",
     desc: "Yellow is an open-source, cross-platform, decentralized chat application. It can be used locally or globally; all that needed, to establish a connection between two users, is to share their ip addresses to on another.",
     imgsrc: "/pubs/yellow.png",
-    link: "https://github.com/Mahmoud-Ehab/yellow",
+    link: "https://github.com/mmoehabb/yellow",
     category: ["Applications"],
     tags: ["chat", "electron.js", "react-native"]
   },
@@ -61,7 +77,7 @@ export const Pubs: Array<Publication> = [
     title: "ArabicOCR",
     desc: "A static web application for interpreting arabic words from images. The project is incomplete. However, I've tried, in it, to develop an algorithmic, non-statistic, solution to break arabic words into letters. And it does yield kind of good results!",
     imgsrc: "/pubs/arabicocr.png",
-    link: "https://github.com/Mahmoud-Ehab/arabic-ocr",
+    link: "https://github.com/mmoehabb/arabic-ocr",
     category: ["Applications"],
     tags: ["ocr", "react", "web application"]
   },
@@ -69,7 +85,7 @@ export const Pubs: Array<Publication> = [
     title: "react-animation-maker",
     desc: "As the name indicates, the package seeks to make it easier for ReactJS developers to define and create their own animations. This objective is achieved, by giving devs the ability to design there own animations, just by using js-css objects in defining animation stages.",
     imgsrc: "/pubs/react-animation-maker.png",
-    link: "https://mahmoud-ehab.github.io/react-animation-maker/",
+    link: "https://mmoehabb.github.io/react-animation-maker/",
     category: ["Packages"],
     tags: ["npm", "package", "react"]
   },
