@@ -29,7 +29,7 @@ export default function Footer() {
             alt="dev.to profile pressable image"
           /> 
         </a> 
-        <a href="https://github.com/Mahmoud-Ehab" className="mx-4">
+        <a href="https://github.com/mmoehabb" className="mx-4">
           <Image 
             src={GithubPic}
             alt="github profile pressable image"
