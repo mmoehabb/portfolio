@@ -21,12 +21,20 @@ const prefix = "/portfolio";
 
 export const Pubs: Array<Publication> = [
   {
-    title: "Play with Your Pal",
-    desc: "A full-stack web application that allows gamers to play local multiplayer games online together.",
-    imgsrc: `${prefix}/pubs/pwyp.png`,
-    link: "https://github.com/mmoehabb/play-with-your-pal",
+    title: "LiteSpace",
+    desc: "A full-stack web application for teaching english as a second language, through one-to-one speaking sessions.",
+    imgsrc: `${prefix}/pubs/litespace.jpg`,
+    link: "https://github.com/litespace-org/litespace",
     category: ["Applications"],
-    tags: ["Golang", "Web Development", "WebSocket"]
+    tags: ["Contribution", "Web Development", "WebRTC"]
+  },
+  {
+    title: "ZigSDL",
+    desc: "A simple framework to develop graphic apps with SDL in zig.",
+    imgsrc: `${prefix}/pubs/zigsdl.png`,
+    link: "https://github.com/mmoehabb/zigsdl",
+    category: ["Packages"],
+    tags: ["SDL", "Game Development", "framework"]
   },
   {
     title: "GoWeb - Project Template",
@@ -35,6 +43,14 @@ export const Pubs: Array<Publication> = [
     link: "https://github.com/mmoehabb/goweb-template",
     category: ["Packages"],
     tags: ["Golang", "Web Development", "Template"]
+  },
+  {
+    title: "Play with Your Pal",
+    desc: "A full-stack web application that allows gamers to play local multiplayer games online together.",
+    imgsrc: `${prefix}/pubs/pwyp.png`,
+    link: "https://github.com/mmoehabb/play-with-your-pal",
+    category: ["Applications"],
+    tags: ["Golang", "Web Development", "WebSocket"]
   },
   {
     title: "xolua - Cross-Platform Game",
@@ -48,9 +64,9 @@ export const Pubs: Array<Publication> = [
     title: "Definitions - Web Application",
     desc: "A full-stack web application dictionary that's continuously getting written by end users; users can supply the application with words, definitions, and different references. Furthermore, words and definitions can be modified or reported/removed with a voting approuch.",
     imgsrc: `${prefix}/pubs/definitions.png`,
-    link: "https://definitions.up.railway.app/",
+    link: "https://github.com/mmoehabb/definitions",
     category: ["Applications"],
-    tags: ["Full-stack Web Application", "Next.js", "TypeScript"]
+    tags: ["full-stack Web Application", "Next.js", "TypeScript"]
   },
   {
     title: "CracksDB: Minimalist Permanent State Manager",
