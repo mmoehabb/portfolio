@@ -30,7 +30,7 @@ export const Pubs: Array<Publication> = [
   },
   {
     title: "ZigSDL",
-    desc: "A simple framework to develop graphic apps with SDL in zig.",
+    desc: "A relatively easy-to-pick, simple, and straightforward package that developers can use in order to write graphic applications in Zig. Just as the name indicates it's build on SDL3.",
     imgsrc: `${prefix}/pubs/zigsdl.png`,
     link: "https://github.com/mmoehabb/zigsdl",
     category: ["Packages"],
