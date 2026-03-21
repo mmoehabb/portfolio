@@ -21,9 +21,33 @@ const prefix = "/portfolio";
 
 export const Pubs: Array<Publication> = [
   {
+    title: "DarAlWefaq Store",
+    desc: "a comprehensive web application for Dar Al Wefaq, a prominent publishing house specializing in academic, legal, and literary works.",
+    imgsrc: `${prefix}/pubs/daralwefaq.webp`,
+    link: "https://daralwefaq.com/",
+    category: ["Applications"],
+    tags: ["Web Development", "Store", "Books"]
+  },
+  {
+    title: "El-Mahrousa",
+    desc: "El-Mahrousa (المحروسة) is a localized, streamlined version of the classic Monopoly game tailored for the Egyptian market. It features Egyptian cities, currency (EGP), and a 24-tile board for faster, more engaging gameplay. The game supports real-time multiplayer over a Peer-to-Peer (P2P) network using WebRTC, allowing players to connect and play directly with each other without a centralized game server.",
+    imgsrc: `${prefix}/pubs/el-mahrousa.webp`,
+    link: "https://github.com/mmoehabb/el-mahrousa",
+    category: ["Applications"],
+    tags: ["GameDevelopment", "HTML5", "Multiplayer"]
+  },
+  {
+    title: "Luci",
+    desc: "A simple CLI application that unifies writting shell commands script files for different operating systems.",
+    imgsrc: `${prefix}/pubs/luci.webp`,
+    link: "https://github.com/mmoehabb/luci",
+    category: ["Packages"],
+    tags: ["Go", "CLI"]
+  },
+  {
     title: "LiteSpace",
     desc: "A full-stack web application for teaching english as a second language, through one-to-one speaking sessions.",
-    imgsrc: `${prefix}/pubs/litespace.jpg`,
+    imgsrc: `${prefix}/pubs/litespace.webp`,
     link: "https://github.com/litespace-org/litespace",
     category: ["Applications"],
     tags: ["Contribution", "Web Development", "WebRTC"]
@@ -31,7 +55,7 @@ export const Pubs: Array<Publication> = [
   {
     title: "ZigSDL",
     desc: "A relatively easy-to-pick, simple, and straightforward package that developers can use in order to write graphic applications in Zig. Just as the name indicates it's build on SDL3.",
-    imgsrc: `${prefix}/pubs/zigsdl.png`,
+    imgsrc: `${prefix}/pubs/zigsdl.webp`,
     link: "https://github.com/mmoehabb/zigsdl",
     category: ["Packages"],
     tags: ["SDL", "Game Development", "framework"]
@@ -47,7 +71,7 @@ export const Pubs: Array<Publication> = [
   {
     title: "Play with Your Pal",
     desc: "A full-stack web application that allows gamers to play local multiplayer games online together.",
-    imgsrc: `${prefix}/pubs/pwyp.png`,
+    imgsrc: `${prefix}/pubs/pwyp.webp`,
     link: "https://github.com/mmoehabb/play-with-your-pal",
     category: ["Applications"],
     tags: ["Golang", "Web Development", "WebSocket"]
@@ -63,7 +87,7 @@ export const Pubs: Array<Publication> = [
   {
     title: "Definitions - Web Application",
     desc: "A full-stack web application dictionary that's continuously getting written by end users; users can supply the application with words, definitions, and different references. Furthermore, words and definitions can be modified or reported/removed with a voting approuch.",
-    imgsrc: `${prefix}/pubs/definitions.png`,
+    imgsrc: `${prefix}/pubs/definitions.webp`,
     link: "https://github.com/mmoehabb/definitions",
     category: ["Applications"],
     tags: ["full-stack Web Application", "Next.js", "TypeScript"]
@@ -71,7 +95,7 @@ export const Pubs: Array<Publication> = [
   {
     title: "CracksDB: Minimalist Permanent State Manager",
     desc: "A minimalist permanent state manager that you may use in applications where the complexity of common databases is deemed unnecessary and groundless. It essentially stands on StateFile architecture which I've recently published an article.",
-    imgsrc: `${prefix}/pubs/cracksdb.png`,
+    imgsrc: `${prefix}/pubs/cracksdb.webp`,
     link: "https://github.com/mmoehabb/cracksdb",
     category: ["Packages"],
     tags: ["npm", "package", "typescript"]
@@ -79,7 +103,7 @@ export const Pubs: Array<Publication> = [
   {
     title: "Decentralized Chat Application",
     desc: "Yellow is an open-source, cross-platform, decentralized chat application. It can be used locally or globally; all that needed, to establish a connection between two users, is to share their ip addresses to on another.",
-    imgsrc: `${prefix}/pubs/yellow.png`,
+    imgsrc: `${prefix}/pubs/yellow.webp`,
     link: "https://github.com/mmoehabb/yellow",
     category: ["Applications"],
     tags: ["chat", "electron.js", "react-native"]
@@ -87,7 +111,7 @@ export const Pubs: Array<Publication> = [
   {
     title: "RxEditor",
     desc: "An open-source static web applciation, that gives users the facility to write and design their own web blogs, slides, articles or even books, by using HTML. Technically, users data is saved in an abstract form as JSON file that can be loaded by the app to be viewed, edited, or exported as a pdf file with the desired style (normal, slide,... etc).",
-    imgsrc: `${prefix}/pubs/rxeditor.png`,
+    imgsrc: `${prefix}/pubs/rxeditor.webp`,
     link:"https://rx-editor.netlify.app/",
     category: ["Applications"],
     tags: ["react", "web application", "editor"]
@@ -95,7 +119,7 @@ export const Pubs: Array<Publication> = [
   {
     title: "ArabicOCR",
     desc: "A static web application for interpreting arabic words from images. The project is incomplete. However, I've tried, in it, to develop an algorithmic, non-statistic, solution to break arabic words into letters. And it does yield kind of good results!",
-    imgsrc: `${prefix}/pubs/arabicocr.png`,
+    imgsrc: `${prefix}/pubs/arabicocr.webp`,
     link: "https://github.com/mmoehabb/arabic-ocr",
     category: ["Applications"],
     tags: ["ocr", "react", "web application"]
@@ -103,7 +127,7 @@ export const Pubs: Array<Publication> = [
   {
     title: "react-animation-maker",
     desc: "As the name indicates, the package seeks to make it easier for ReactJS developers to define and create their own animations. This objective is achieved, by giving devs the ability to design there own animations, just by using js-css objects in defining animation stages.",
-    imgsrc: `${prefix}/pubs/react-animation-maker.png`,
+    imgsrc: `${prefix}/pubs/react-animation-maker.webp`,
     link: "https://mmoehabb.github.io/react-animation-maker/",
     category: ["Packages"],
     tags: ["npm", "package", "react"]
@@ -112,7 +136,7 @@ export const Pubs: Array<Publication> = [
     title: "Storage-Facilities Architecture",
     desc: `This article prescribes a general architecture, perceived as a receptacle box in which various frameworks can be plugged, that web developers can implement regardless of what technology will be used in the future.
 This article is a plea for mature industry!`,
-    imgsrc: `${prefix}/pubs/sfawd.jpg`,
+    imgsrc: `${prefix}/pubs/sfawd.webp`,
     link: "https://moehab.substack.com/p/storage-facilities-architecture",
     category: ["Writings"],
     tags: ["web", "software engineering", "architecture"]
@@ -120,7 +144,7 @@ This article is a plea for mature industry!`,
   {
     title: "StateFile: A Minimalist Design for Permanent State Management",
     desc: "A simple minimalist design to permanetally store and access arbitrary types of data. It can be handy in kind of applications where the complexity of common databases is considered groundless.",
-    imgsrc: `${prefix}/pubs/statefile.jpg`,
+    imgsrc: `${prefix}/pubs/statefile.webp`,
     link: "https://dev.to/_moehab/statefile-a-minimalist-design-for-permanent-state-management-43d7",
     category: ["Writings"],
     tags: ["state management", "software engineering"]
@@ -128,7 +152,7 @@ This article is a plea for mature industry!`,
   {
     title: "Introduction to Agile",
     desc: "A quick introduction to Agile methodology where the principles of the manifesto are manifested! Ultimately by using Bertrand Meyer's book 'Agile!: the Good, the Hype, and the Ugly' as guidance and reference.",
-    imgsrc: `${prefix}/pubs/agile.jpg`,
+    imgsrc: `${prefix}/pubs/agile.webp`,
     link: "https://dev.to/_moehab/introduction-to-agile-25bc",
     category: ["Writings"],
     tags: ["software development", "agile"]
@@ -136,7 +160,7 @@ This article is a plea for mature industry!`,
   {
     title: "A Sneak Peek of Bash Script",
     desc: "By reading this article you will get a glance of how to write code in bash script just well enough to write a video trimmer, with the aid of FFMPEG package.",
-    imgsrc: `${prefix}/pubs/bashscript.jpg`,
+    imgsrc: `${prefix}/pubs/bashscript.webp`,
     link: "https://dev.to/_moehab/make-video-cutter-with-bash-script-ffmpeg-om0",
     category: ["Writings"],
     tags: ["bash", "linux", "ffmpeg"]
@@ -144,7 +168,7 @@ This article is a plea for mature industry!`,
   {
     title: "An Investigation of The Laws of Thought",
     desc: "",
-    imgsrc: `${prefix}/pubs/an-investigation-of-the-laws-of-thought.jpg`,
+    imgsrc: `${prefix}/pubs/an-investigation-of-the-laws-of-thought.webp`,
     link: "#",
     category: ["Designs"],
     tags: ["indesgin", "cover", "books"]
@@ -152,7 +176,7 @@ This article is a plea for mature industry!`,
   {
     title: "The Computer and the Brain",
     desc: "",
-    imgsrc: `${prefix}/pubs/the-computer-and-the-brain.jpg`,
+    imgsrc: `${prefix}/pubs/the-computer-and-the-brain.webp`,
     link: "#",
     category: ["Designs"],
     tags: ["indesgin", "cover", "books"]
