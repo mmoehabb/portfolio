@@ -21,6 +21,22 @@ const prefix = "/portfolio";
 
 export const Pubs: Array<Publication> = [
   {
+    title: "Syncoboard",
+    desc: "A code-driven project management board designed specifically for high-velocity software development teams.",
+    imgsrc: `${prefix}/pubs/syncoboard.webp`,
+    link: "https://syncoboard.com/",
+    category: ["Applications"],
+    tags: ["Web Development", "Management"]
+  },
+  {
+    title: "ZigSDL",
+    desc: "A relatively easy-to-pick, simple, and straightforward package that developers can use in order to write graphic applications in Zig. Just as the name indicates it's build on SDL3.",
+    imgsrc: `${prefix}/pubs/zigsdl.webp`,
+    link: "https://github.com/mmoehabb/zigsdl",
+    category: ["Packages"],
+    tags: ["SDL", "Game Development", "framework"]
+  },
+  {
     title: "DarAlWefaq Store",
     desc: "a comprehensive web application for Dar Al Wefaq, a prominent publishing house specializing in academic, legal, and literary works.",
     imgsrc: `${prefix}/pubs/daralwefaq.webp`,
@@ -51,14 +67,6 @@ export const Pubs: Array<Publication> = [
     link: "https://github.com/litespace-org/litespace",
     category: ["Applications"],
     tags: ["Contribution", "Web Development", "WebRTC"]
-  },
-  {
-    title: "ZigSDL",
-    desc: "A relatively easy-to-pick, simple, and straightforward package that developers can use in order to write graphic applications in Zig. Just as the name indicates it's build on SDL3.",
-    imgsrc: `${prefix}/pubs/zigsdl.webp`,
-    link: "https://github.com/mmoehabb/zigsdl",
-    category: ["Packages"],
-    tags: ["SDL", "Game Development", "framework"]
   },
   {
     title: "GoWeb - Project Template",
@@ -131,6 +139,14 @@ export const Pubs: Array<Publication> = [
     link: "https://mmoehabb.github.io/react-animation-maker/",
     category: ["Packages"],
     tags: ["npm", "package", "react"]
+  },
+  {
+    title: "A Comprehensive Guide to Integrate FawryPay API into your own RESTful API Server",
+    desc: `These papers provide a brief, but sufficient, exposition of how FawryPay works, how to integrate its payment methods in your back-end software application, how refund works, and how to keep up with transactions status. Moreover, a general architecture that ensures a seamless integration of FawryPay API, with a flexible design that can adapt any other API, is proposed at the end of these papers.`,
+    imgsrc: `https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ffr8zz7t4sqpix652b8yl.png`,
+    link: "https://dev.to/_moehab/a-comprehensive-guide-to-integrate-fawrypay-api-into-your-own-restful-api-server-478d",
+    category: ["Writings"],
+    tags: ["Fawry", "Payment Provider", "Integration"]
   },
   {
     title: "Storage-Facilities Architecture",
