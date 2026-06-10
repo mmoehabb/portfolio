@@ -4,9 +4,8 @@ import Link from "next/link"
 import PublicationCard from "@/components/publication-card";
 
 import { STRINGS } from "@/app/strings";
-import { Pubs } from "@/app/lib/data";
+import { getPublicationsByCategory } from "@/app/lib/data";
 import ProfilePic from "@/public/portrait.jpg";
-import { EllipsisHorizontalIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
@@ -40,17 +39,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={"flex flex-col items-center bg-secondary text-primary py-24 md:p-32"}>
-        <h1 className="mb-6 md:mb-12 text-4xl md:text-5xl">
-          Latest Publications
-        </h1>  
-        <div className="flex flex-wrap md:flex-col lg:flex-row justify-center items-center w-full">
-            {[Pubs[0], Pubs[1]].map((pub, i) => (
+      <section className={"flex flex-col items-center bg-secondary text-primary py-24 md:py-32 px-4"}>
+        <div className="w-full max-w-7xl">
+          <div className="relative mb-12">
+            <h1 className="text-4xl md:text-5xl">
+              Latest Applications
+            </h1>
+            <span className="absolute w-10 h-0.5 mt-0.5 bg-primary"></span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            {getPublicationsByCategory("Applications", 3).map((pub, i) => (
               <PublicationCard key={i} publication={pub}/>
             ))}
-            <Link href="/publications" className="transition w-16 text-accent hover:translate-x-2">
-              <EllipsisHorizontalIcon />
+          </div>
+          <div className="flex justify-center mt-8">
+            <Link href="/publications?category=Applications" className="text-accent hover:underline transition">
+              View all applications →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className={"flex flex-col items-center bg-secondary text-primary pb-24 md:pb-32 px-4"}>
+        <div className="w-full max-w-7xl">
+          <div className="relative mb-12">
+            <h1 className="text-4xl md:text-5xl">
+              Latest Articles
+            </h1>
+            <span className="absolute w-10 h-0.5 mt-0.5 bg-primary"></span>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+            {getPublicationsByCategory("Writings", 3).map((pub, i) => (
+              <PublicationCard key={i} publication={pub}/>
+            ))}
+          </div>
+          <div className="flex justify-center mt-8">
+            <Link href="/publications?category=Writings" className="text-accent hover:underline transition">
+              View all articles →
+            </Link>
+          </div>
         </div>
       </section>
     </main>

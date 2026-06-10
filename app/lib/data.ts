@@ -19,6 +19,10 @@ export const CATEGORIES: Array<CATEGORY> = [
 // comes in handy when the project is deployed with guthub pages.
 const prefix = "/portfolio";
 
+export function getPublicationsByCategory(category: CATEGORY, count: number): Array<Publication> {
+  return Pubs.filter(pub => pub.category.includes(category)).slice(0, count)
+}
+
 export const Pubs: Array<Publication> = [
   {
     title: "Syncoboard",
