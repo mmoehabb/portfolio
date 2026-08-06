@@ -33,10 +33,10 @@ export const Pubs: Array<Publication> = [
     tags: ["Web Development", "Management"]
   },
   {
-    title: "ZigSDL",
-    desc: "A relatively easy-to-pick, simple, and straightforward package that developers can use in order to write graphic applications in Zig. Just as the name indicates it's build on SDL3.",
-    imgsrc: `${prefix}/pubs/zigsdl.webp`,
-    link: "https://github.com/mmoehabb/zigsdl",
+    title: "Zest",
+    desc: "A relatively easy-to-pick, simple, and straightforward package that developers can use in order to write graphic applications in Zig.",
+    imgsrc: `${prefix}/pubs/zest.webp`,
+    link: "https://github.com/mmoehabb/zest",
     category: ["Packages"],
     tags: ["SDL", "Game Development", "framework"]
   },
